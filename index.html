@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼돌이 소개</title>
+    <style>
+        /* 전체 페이지 스타일 초기화 및 배경 설정 */
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 프로필 카드 컨테이너 */
+        .profile-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        /* 프로필 이미지 (원형) */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #e9ecef;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            color: #adb5bd;
+            overflow: hidden;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 텍스트 스타일링 */
+        h1 {
+            font-size: 24px;
+            margin: 0 0 8px 0;
+            color: #212529;
+        }
+
+        p.subtitle {
+            font-size: 16px;
+            color: #6c757d;
+            margin: 0 0 20px 0;
+        }
+
+        p.description {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #495057;
+            margin: 0 0 30px 0;
+            word-break: keep-all;
+        }
+
+        /* 소셜/연락처 링크 버튼 */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .link-btn {
+            display: block;
+            padding: 12px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+        }
+
+        .link-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .link-btn.secondary {
+            background-color: #6c757d;
+        }
+
+        .link-btn.secondary:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="profile-img">
+            👋
+        </div>
+
+        <h1>안녕하세요, 퍼돌이입니다</h1>
+        <p class="subtitle">항상 실력을 늘리고, 다양한 활용을 시도하는 학생 개발자</p>
+
+        <p class="description">
+            AI를 통한 개발 및 프로그래밍을 주로 하며,
+            AI 없이도 충분히 멋진 프로그램을 만들기 위해 노력합니다.
+            항상 원하는 것을 이루기 위해 노력하는 학생 개발자입니다.
+        </p>
+
+        <div class="links">
+            <a href="github.pudol.kro.kr" target="_blank" class="link-btn">GitHub 방문하기</a>
+            <a href="entry.pudol.kro.kr" target="_blank" class="link-btn">이메일 보내기</a>
+        </div>
+    </div>
+
+</body>
+</html>
